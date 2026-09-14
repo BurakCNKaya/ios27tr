@@ -1,0 +1,161 @@
+{
+  "updatedAt": "2026-09-14T12:21:00+03:00",
+  "device": "iPhone 17 Pro Max",
+  "version": "iOS 27",
+  "features": [
+    {
+      "id": "ios27-release",
+      "title": "iOS 27",
+      "category": "Sistem",
+      "status": "available",
+      "statusLabel": "Türkiye’de kullanılabilir",
+      "device": "17 Pro Max destekli",
+      "summary": "iOS 27, 14 Eylül 2026 itibarıyla yayınlandı. Yeni tasarım seçenekleri, performans iyileştirmeleri ve yeni Apple Intelligence özellikleri içeriyor.",
+      "source": "https://www.apple.com/tr/os/ios/",
+      "sourceLabel": "Apple — iOS 27"
+    },
+    {
+      "id": "liquid-glass",
+      "title": "Liquid Glass görünümü",
+      "category": "Tasarım",
+      "status": "available",
+      "statusLabel": "Türkiye’de kullanılabilir",
+      "device": "17 Pro Max destekli",
+      "summary": "Liquid Glass görünümünü ultra şeffaftan daha renkli bir görünüme kadar özelleştirebilen yeni kontroller geliyor.",
+      "source": "https://www.apple.com/tr/os/ios/",
+      "sourceLabel": "Apple — iOS 27"
+    },
+    {
+      "id": "performance",
+      "title": "Sistem performansı",
+      "category": "Performans",
+      "status": "available",
+      "statusLabel": "Türkiye’de kullanılabilir",
+      "device": "17 Pro Max destekli",
+      "summary": "Uygulama açılışları, AirDrop, Mail araması ve Wi‑Fi/hücresel geçişleri dahil sistem genelinde daha hızlı ve daha güvenilir bir deneyim hedefleniyor.",
+      "source": "https://apps.apple.com/tr/iphone/story/id1896606813?l=tr",
+      "sourceLabel": "Apple — iOS 27’deki yenilikler"
+    },
+    {
+      "id": "spatial-reframing",
+      "title": "Uzamsal Yeniden Çerçeveleme",
+      "category": "Fotoğraflar",
+      "status": "available",
+      "statusLabel": "Apple Intelligence ile",
+      "device": "17 Pro Max destekli",
+      "summary": "Fotoğraf çekildikten sonra kompozisyonu ve perspektifi yapay zeka yardımıyla yeniden düzenlemeyi sağlıyor.",
+      "source": "https://www.apple.com/tr/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/",
+      "sourceLabel": "Apple Newsroom"
+    },
+    {
+      "id": "photo-expand-cleanup",
+      "title": "Genişletme + gelişmiş Düzeltme",
+      "category": "Fotoğraflar",
+      "status": "available",
+      "statusLabel": "Apple Intelligence ile",
+      "device": "17 Pro Max destekli",
+      "summary": "Kadrajın dışını üretken yapay zekayla genişletebilir ve daha büyük nesneleri fotoğraflardan kaldırabilirsin.",
+      "source": "https://www.apple.com/tr/os/ios/",
+      "sourceLabel": "Apple — iOS 27"
+    },
+    {
+      "id": "image-playground",
+      "title": "Yeni Image Playground",
+      "category": "Apple Intelligence",
+      "status": "available",
+      "statusLabel": "Türkçe Apple Intelligence destekli",
+      "device": "17 Pro Max destekli",
+      "summary": "Fotogerçekçi dahil daha fazla stilde görüntü üretme ve mevcut görselleri doğal dille düzenleme özellikleri sunuluyor.",
+      "source": "https://www.apple.com/tr/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/",
+      "sourceLabel": "Apple Newsroom"
+    },
+    {
+      "id": "safari-notify",
+      "title": "Safari — Bana Bildir",
+      "category": "Safari",
+      "status": "available",
+      "statusLabel": "Apple Intelligence ile",
+      "device": "17 Pro Max destekli",
+      "summary": "Bir web sayfasındaki stok veya fiyat düşüşü gibi değişiklikleri takip edip sana haber verebiliyor.",
+      "source": "https://www.apple.com/tr/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "sourceLabel": "Apple Newsroom"
+    },
+    {
+      "id": "message-suggestions",
+      "title": "Mesajlar ve Mail önerileri",
+      "category": "Apple Intelligence",
+      "status": "conditional",
+      "statusLabel": "İngilizce ile başlıyor",
+      "device": "17 Pro Max destekli",
+      "summary": "Sohbet bağlamına göre tek dokunuşla Anımsatıcılar veya Notlar oluşturma gibi eylemler önerebiliyor.",
+      "source": "https://www.apple.com/tr/os/ios/",
+      "sourceLabel": "Apple — iOS 27"
+    },
+    {
+      "id": "call-context",
+      "title": "Arama Bağlamı",
+      "category": "Apple Intelligence",
+      "status": "conditional",
+      "statusLabel": "İngilizce ile başlıyor",
+      "device": "17 Pro Max destekli",
+      "summary": "Bir şirketle konuşurken Mail gibi uygulamalardaki ilgili bilgileri proaktif biçimde ekrana getirebiliyor.",
+      "source": "https://www.apple.com/tr/os/ios/",
+      "sourceLabel": "Apple — iOS 27"
+    },
+    {
+      "id": "siri-ai",
+      "title": "Siri AI",
+      "category": "Siri",
+      "status": "conditional",
+      "statusLabel": "İngilizce beta — 14 Eylül",
+      "device": "17 Pro Max destekli",
+      "summary": "Desteklenen aygıt dili İngilizce olduğunda Siri AI beta sürümü 14 Eylül 2026 itibarıyla açılıyor. Türkçe Siri AI desteği için henüz tarih açıklanmış değil.",
+      "source": "https://www.apple.com/tr/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "sourceLabel": "Apple Newsroom — 9 Eylül 2026"
+    },
+    {
+      "id": "apple-intelligence-tr",
+      "title": "Apple Intelligence — Türkçe",
+      "category": "Apple Intelligence",
+      "status": "available",
+      "statusLabel": "Türkçe destekleniyor",
+      "device": "17 Pro Max destekli",
+      "summary": "Apple Intelligence desteklenen diller arasında Türkçeyi listeliyor; ancak bazı özellikler dil veya bölgeye göre farklılık gösterebiliyor.",
+      "source": "https://www.apple.com/tr/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "sourceLabel": "Apple Newsroom"
+    },
+    {
+      "id": "apple-pay-tr",
+      "title": "Apple Pay",
+      "category": "Cüzdan",
+      "status": "unavailable",
+      "statusLabel": "Türkiye’de yok",
+      "device": "Donanım uygun, bölge desteği yok",
+      "summary": "Apple’ın güncel kullanılabilirlik listesinde Türkiye Apple Pay ülkeleri arasında yer almıyor.",
+      "source": "https://www.apple.com/tr/ios/feature-availability/",
+      "sourceLabel": "Apple — Özellik Kullanılabilirliği"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "14 Eylül 2026",
+      "title": "iOS 27 yayınlandı",
+      "text": "Yeni Apple Intelligence özellikleri ve iOS 27 Türkiye’de kullanıma sunuldu. Siri AI İngilizce aygıt diliyle beta olarak başlıyor."
+    },
+    {
+      "date": "9 Eylül 2026",
+      "title": "Siri AI çıkış takvimi netleşti",
+      "text": "Apple, Siri AI’ın 14 Eylül’de İngilizce dilinde beta olarak başlayacağını; Ekim ayında Fransızca, İspanyolca, Japonca, Korece ve Portekizce desteği geleceğini açıkladı."
+    },
+    {
+      "date": "9 Haziran 2026",
+      "title": "Yeni Apple Intelligence özellikleri",
+      "text": "Uzamsal Yeniden Çerçeveleme, gelişmiş görsel düzenleme ve yeni Image Playground ayrıntıları açıklandı."
+    },
+    {
+      "date": "7 Haziran 2026",
+      "title": "WWDC26 — iOS 27 duyuruldu",
+      "text": "Apple iOS 27, yeni nesil Apple Intelligence ve Siri AI’ı tanıttı."
+    }
+  ]
+}
