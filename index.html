@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="iOS 27 Türkiye yenilikleri ve iPhone 17 Pro Max uyumluluk takibi." />
+  <title>iOS 27 Türkiye Takip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="Ana sayfa">
+      <span class="brand-orb"></span>
+      <span>iOS27<span class="muted">TR</span></span>
+    </a>
+    <nav>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#siri">Siri AI</a>
+      <a href="#gecmis">Geçmiş</a>
+      <a href="#kaynaklar">Kaynaklar</a>
+    </nav>
+    <button class="ghost" id="themeButton" aria-label="Görünümü değiştir">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> TÜRKİYE CANLI TAKİP</div>
+        <h1>iOS 27.<br><span>Türkiye’de ne var?</span></h1>
+        <p>iPhone 17 Pro Max için iOS 27 yeniliklerini; Türkiye, dil ve cihaz desteğine göre tek yerde takip et.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#ozellikler">Yenilikleri gör</a>
+          <a class="secondary" href="#siri">Siri AI durumu</a>
+        </div>
+        <div class="last-update" id="lastUpdated">Son kontrol yükleniyor…</div>
+      </div>
+      <div class="hero-visual card-glass">
+        <img src="assets/hero.webp" alt="Koyu temalı akıllı telefon görseli" />
+        <div class="device-chip">
+          <span>📱</span>
+          <div><b>iPhone 17 Pro Max</b><small>Takip edilen cihaz</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell stats-wrap" aria-label="Özet">
+      <div class="stat"><strong id="availableCount">–</strong><span>Türkiye’de kullanılabilir</span></div>
+      <div class="stat"><strong id="conditionalCount">–</strong><span>Koşullu / dil kısıtlı</span></div>
+      <div class="stat"><strong id="unavailableCount">–</strong><span>Türkiye’de yok</span></div>
+      <div class="stat accent"><strong>17 Pro Max</strong><span>Apple Intelligence uyumlu</span></div>
+    </section>
+
+    <section class="section shell" id="ozellikler">
+      <div class="section-head">
+        <div><span class="kicker">ÖZELLİK TAKİBİ</span><h2>Türkiye durumu</h2></div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Özellik ara…" aria-label="Özellik ara"></div>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">Tümü</button>
+        <button class="filter" data-filter="available">✓ Kullanılabilir</button>
+        <button class="filter" data-filter="conditional">◐ Koşullu</button>
+        <button class="filter" data-filter="unavailable">× Türkiye’de yok</button>
+      </div>
+      <div class="features-grid" id="featuresGrid"></div>
+      <div class="empty hidden" id="emptyState">Bu filtrede eşleşen özellik yok.</div>
+    </section>
+
+    <section class="section shell ai-section" id="siri">
+      <div class="ai-image card-glass"><img src="assets/ai.webp" alt="Yapay zeka asistanını temsil eden telefon görseli" /></div>
+      <div class="ai-copy">
+        <span class="kicker">SİRİ AI</span>
+        <h2>İngilizce beta açıldı.<br>Türkçe hâlâ beklemede.</h2>
+        <p>Apple’ın 9 Eylül 2026 duyurusuna göre Siri AI, <b>14 Eylül 2026</b> itibarıyla desteklenen cihazlarda aygıt dili İngilizce olduğunda beta olarak kullanıma sunuluyor. Türkçe Siri AI için şu an resmi tarih yok.</p>
+        <div class="mini-grid">
+          <div><span class="badge available">AKTİF</span><b>Apple Intelligence</b><small>Türkçe destekli</small></div>
+          <div><span class="badge conditional">BETA</span><b>Siri AI</b><small>İngilizce aygıt dili</small></div>
+          <div><span class="badge conditional">BEKLİYOR</span><b>Siri AI Türkçe</b><small>Tarih açıklanmadı</small></div>
+          <div><span class="badge unavailable">YOK</span><b>Apple Pay</b><small>Türkiye listede değil</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell map-section">
+      <div class="map-copy">
+        <span class="kicker">TÜRKİYE ODAKLI</span>
+        <h2>Bölge kısıtını özellikten ayırıyoruz.</h2>
+        <p>“iOS 27’de var” demek, “Türkiye’de ve Türkçe çalışıyor” demek değil. Her kartta cihaz, dil ve bölge durumunu ayrı gösteriyoruz.</p>
+      </div>
+      <div class="map-image"><img src="assets/map.webp" alt="Türkiye'yi temsil eden ışıklı ağ haritası" /></div>
+    </section>
+
+    <section class="section shell" id="resmi-akis">
+      <div class="section-head">
+        <div><span class="kicker">RESMÎ APPLE AKIŞI</span><h2>Yeni duyurular</h2></div>
+        <span class="feed-note" id="feedChecked">Günlük kontrol</span>
+      </div>
+      <div class="official-feed" id="officialFeed">
+        <div class="feed-placeholder">Resmî akış yükleniyor…</div>
+      </div>
+    </section>
+
+    <section class="section shell" id="gecmis">
+      <div class="section-head"><div><span class="kicker">GÜNCELLEME GEÇMİŞİ</span><h2>Ne zaman ne değişti?</h2></div></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="section shell sources" id="kaynaklar">
+      <span class="kicker">KAYNAKLAR</span>
+      <h2>Söylenti değil, kaynak.</h2>
+      <p>Durumlar öncelikle Apple Türkiye’nin resmi iOS, Apple Intelligence, Newsroom ve özellik kullanılabilirliği sayfalarına göre tutulur.</p>
+      <div class="source-links">
+        <a href="https://www.apple.com/tr/os/ios/" target="_blank" rel="noopener">Apple — iOS 27 ↗</a>
+        <a href="https://www.apple.com/tr/apple-intelligence/" target="_blank" rel="noopener">Apple Intelligence ↗</a>
+        <a href="https://www.apple.com/tr/newsroom/archive/ios/" target="_blank" rel="noopener">Apple Newsroom ↗</a>
+        <a href="https://www.apple.com/tr/ios/feature-availability/" target="_blank" rel="noopener">Özellik kullanılabilirliği ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <div><b>iOS27TR</b><span>Bağımsız takip sayfası. Apple ile bağlantılı değildir.</span></div>
+    <small>Veri dosyası: <code>data/features.json</code></small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
