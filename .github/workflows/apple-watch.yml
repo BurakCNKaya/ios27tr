@@ -1,0 +1,52 @@
+name: Apple iOS 27 Watch
+
+on:
+  schedule:
+    - cron: '15 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check Apple Newsroom
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, re, urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          url='https://www.apple.com/tr/newsroom/archive/ios/'
+          req=urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
+          html=urllib.request.urlopen(req, timeout=30).read().decode('utf-8','ignore')
+          links=[]
+          for href, title in re.findall(r'href="([^"]+)"[^>]*>(.*?)</a>', html, re.S):
+              text=re.sub('<[^>]+>',' ',title)
+              text=re.sub(r'\s+',' ',text).strip()
+              if 'ios 27' in text.lower() or 'ios-27' in href.lower():
+                  if href.startswith('/'):
+                      href='https://www.apple.com'+href
+                  links.append({'title': text or 'Apple iOS 27 duyurusu','url':href})
+          seen=set(); items=[]
+          for item in links:
+              if item['url'] not in seen:
+                  seen.add(item['url']); items.append(item)
+          out={'checkedAt': datetime.now(timezone.utc).isoformat(), 'items': items[:12]}
+          Path('data').mkdir(exist_ok=True)
+          Path('data/apple_feed.json').write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/apple_feed.json
+          git diff --cached --quiet || git commit -m "Update Apple iOS 27 feed"
+          git push
